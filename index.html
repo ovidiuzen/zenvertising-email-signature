@@ -1,191 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>Zenvertising Email Signature</title>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-  <title>Zenvertising Email Signature</title>
-  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
 
-  <style>
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
+      body {
+        display: flex;
+      }
 
-    body {
-      display: flex;
-    }
+      table {
+        border-collapse: collapse;
+      }
 
-    table {
-      border-collapse: collapse;
-    }
+      .wrapper {
+        margin: auto;
+        position: relative;
+      }
 
-    .wrapper {
-      margin: auto;
-      position: relative;
-    }
+      .info {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 200px;
+        background: #f0f0f0;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+      }
 
-    .info {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 200px;
-      background: #f0f0f0;
-      display: flex;
-      padding: 20px;
-      justify-content: center;
-      align-items: center;
-    }
+      .btn {
+        border: 1px solid #000;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        padding: 10px 20px;
+      }
 
-    .btn {
-      border: 1px solid #000;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 0.1em;
-      padding: 10px 20px;
-    }
+      :focus {
+        background: #f0f0f0;
+        outline: none;
+      }
+    </style>
 
-    :focus {
-      background: #f0f0f0;
-      outline: none;
-    }
-  </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap"
-    rel="stylesheet">
-
-</head>
-
-<body>
-  <div class="wrapper">
-    <table id="signature" width="420" style="width: 420px;">
-      <tr>
-       
-
-        <td width="50%" style="padding: 20px; border-left: 1px solid #DFD9D6; height: 100%;">
-          <table width="100%">
-            <tr>
-              <td contenteditable="true" style="
-                    font-family: 'IBM Plex Sans', Helvetica,  Arial, sans-serif;
+  <body>
+    <div class="wrapper">
+      <table id="signature" width="420" style="width: 420px">
+        <tr>
+          <td
+            width="50%"
+            style="padding: 20px; border-left: 1px solid #dfd9d6; height: 100%"
+          >
+            <table width="100%">
+              <tr>
+                <td
+                  contenteditable="true"
+                  style="
+                    font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
                     font-size: 18pt;
                     font-weight: normal;
                     line-height: 1.1;
                     color: #212020;
-                    padding: 0 0 5px 0 ;
-                  ">
-                Bogdan Şuica
-              </td>
-            </tr>
-            <tr>
-              <td style="
+                    padding: 0 0 5px 0;
+                  "
+                >
+                  Bogdan Şuica
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
                     padding: 0px 0 20px;
                     font-family: 'SF Mono', 'Courier New', Courier, monospace;
                     font-size: 9pt;
                     font-weight: normal;
                     line-height: 1.1;
                     color: #212020;
-                  ">
-                <span contenteditable="true">CHIEF ZEN OFFICER</span>
-              </td>
-            </tr>
+                  "
+                >
+                  <span contenteditable="true">CHIEF ZEN OFFICER</span>
+                </td>
+              </tr>
 
-
-            <tr>
-              <td style="
+              <tr>
+                <td
+                  style="
                     padding: 0 0 0 0;
                     font-family: 'IBM Plex Sans', sans-serif;
                     font-size: 9pt;
                     font-weight: normal;
                     line-height: 1.1;
                     color: #000;
-                  ">
-                <span contenteditable="true" style="text-decoration: none;color: #212020;">+40 768 029 077</span>
-                &nbsp;
+                  "
+                >
+                  <span
+                    contenteditable="true"
+                    style="text-decoration: none; color: #212020"
+                    >+40 768 029 077</span
+                  >
+                  &nbsp;
+                </td>
+              </tr>
 
-              </td>
-            </tr>
-
-            <tr>
-              <td style="
+              <tr>
+                <td
+                  style="
                     padding: 5px 0 10px 0;
                     font-family: 'IBM Plex Sans', sans-serif;
                     font-size: 9pt;
                     font-weight: normal;
                     line-height: 1.4;
                     color: #212020;
-                  ">
-                <span style="text-decoration: none;color: #212020;"></span>
-                Str. Mureșenilor 27, 2nd floor,<br> Brașov, Romania</span>
-              </td>
-            </tr>
-            <tr>
-              <td style="
-                  padding: 7px 0 0 0;
-                  font-family: 'IBM Plex Sans', sans-serif;
-                  font-size: 9pt;
-                  font-weight: bold;
-                  line-height: 1;
-                  color: #212020;">
-                <a href="https://zenvertising.ro" style="color: #212020; text-decoration: none">zenvertising.ro</a>
-              </td>
-            </tr>
+                  "
+                >
+                  <span style="text-decoration: none; color: #212020">
+                    Str. Mureșenilor 27, 2nd floor,<br />
+                    Brașov, Romania</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="
+                    padding: 7px 0 0 0;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-size: 9pt;
+                    font-weight: bold;
+                    line-height: 1;
+                    color: #212020;
+                  "
+                >
+                  <a
+                    href="https://zenvertising.ro"
+                    style="color: #212020; text-decoration: none"
+                    >zenvertising.ro</a
+                  >
+                </td>
+              </tr>
+            </table>
+          </td>
 
-            
-          </table>
-        </td>
+          <!-- <td width="1" style="width: 1px; background: #DFD9D6;"></td> -->
 
-        <!-- <td width="1" style="width: 1px; background: #DFD9D6;"></td> -->
+          <td
+            width="50%"
+            style="
+              padding: 20px;
+              border-left: 1px solid #dfd9d6;
+              border-right: 1px solid #dfd9d6;
+              height: 100%;
+            "
+          >
+            <table style="height: 100%" height="100%" width="100%">
+              <tr>
+                <td
+                  align="center"
+                  style="padding: 0; padding-bottom: 80px; text-align: center"
+                  valign="top"
+                  align="center"
+                >
+                  <img
+                    alt="Zenvertising Symbol"
+                    src="img/logo-symbol.png"
+                    width="32"
+                    height="42"
+                    style="
+                      display: block;
+                      width: 32px;
+                      height: 42px;
+                      margin: auto;
+                    "
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="padding: 0; text-align: center"
+                  valign="top"
+                  align="center"
+                >
+                  <img
+                    alt="Zenvertising Wordmark"
+                    src="img/logo-wordmark.png"
+                    width="160"
+                    height="25"
+                    style="
+                      display: block;
+                      width: 160px;
+                      height: 25px;
+                      margin: auto;
+                    "
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
 
-        <td width="50%" style="padding: 20px; border-left: 1px solid #DFD9D6; border-right: 1px solid #DFD9D6; height: 100%;">
-          <table style="height: 100%;" height="100%" width="100%">
-            <tr>
-             <td align="center" style="padding: 0; padding-bottom: 80px; text-align: center;" valign="top" align="center"><img alt="Zenvertising Symbol"
-                src="img/logo-symbol.png" width="32" height="42" style="display: block; width: 32px; height: 42px; margin: auto" />
-            </td>
-            </tr>
-            <tr>
-              <td  style="padding: 0; text-align: center; " valign="top" align="center"><img alt="Zenvertising Wordmark"
-                  src="img/logo-wordmark.png" width="160" height="25"
-                  style="display: block; width: 160px; height: 25px; margin: auto;" /></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-
-    <div class="info">
-      <div>
-        <p style="font-family: 'IBM Plex Sans', sans-serif; font-size: 12px">
-          Click and edit each line of text then press the Copy Signature
-          button
-        </p>
-        <button class="btn" data-clipboard-action="copy" data-clipboard-target="#signature">
-          Copy Signature 
-        </button>
+      <div class="info">
+        <div>
+          <p style="font-family: 'IBM Plex Sans', sans-serif; font-size: 12px">
+            Click and edit each line of text then press the Copy Signature
+            button
+          </p>
+          <button
+            class="btn"
+            data-clipboard-action="copy"
+            data-clipboard-target="#signature"
+          >
+            Copy Signature
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script type="text/javascript">
-    var clipboard = new ClipboardJS(".btn");
+    <script type="text/javascript">
+      var clipboard = new ClipboardJS(".btn");
 
-    clipboard.on("success", function (e) {
-      console.log(e);
-    });
+      clipboard.on("success", function (e) {
+        console.log(e);
+      });
 
-    clipboard.on("error", function (e) {
-      console.log(e);
-    });
-  </script>
-</body>
-
+      clipboard.on("error", function (e) {
+        console.log(e);
+      });
+    </script>
+  </body>
 </html>
